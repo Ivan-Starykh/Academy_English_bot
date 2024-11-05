@@ -1,3 +1,5 @@
-lib
-bin
-include
+/lib
+/bin
+/include
+.env
+.DS_Store
