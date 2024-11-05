@@ -1,10 +1,14 @@
 import logging
 import os
+from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import Application, CommandHandler, CallbackContext
 
+# Загрузка переменных из .env
+load_dotenv()
+
 # Вставьте ваш токен здесь
-TOKEN = '7880782507:AAFUjK_vuEBrj1_j3qZ9CyW-XkDFDCxDg3Y'
+token = os.getenv("TELEGRAM_TOKEN")
 
 logging.basicConfig(level=logging.INFO)
 
